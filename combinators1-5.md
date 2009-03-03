@@ -1,11 +1,11 @@
-# See http://github.com/raganwald/homoiconic/tree/master/2008-11-12/combinator_chemistry.md
+See http://github.com/raganwald/homoiconic/tree/master/2008-11-12/combinator_chemistry.md
 
-** Intro
+# Intro
 
 sxyz = xz(yz)
 kxy = x
 
-** Exercises
+# Exercises
 
    (ss)kkk = sk(kk)k = kk((kk)k) = kkk = k
    kkk(ss) = k(ss)
@@ -35,42 +35,42 @@ A little more advanced exerciaes: is there a molecule, let us called it I, havin
 
   Ix = skkx = kx(kx) = x
 
-** New programming exercises:
+## New programming exercises:
 
 Find combinators M, B, W, L, T such that
 
      Mx = xx
 
-*** Solution
+### Solution
 
      xx = Ix(Ix) = SIIx => M = SII
 
-** B
+## B
      Bxyz = x(yz)
 
-*** Solution
+### Solution
 
      x(yz) = S?yz, ?z = x. Kxz = x => x(yz) = S(Kx)yz = ((KS)x)(Kx)yz = S(KS)Kxyz
      B = S(KS)K
 
-** W
+## W
 
      Wxy = xyy
 
-*** Solution
+### Solution
 
      xyy = (xy)y =
             = (xy)(?xy) = (xy)(KIxy) = Sx(KIx)y = Sx((KI)x)y
             = SS(KI)xy
 
-*** Check:
+### Check:
     SS(KI)xy = Sx(KIx)y = xy(KIxy) = xy(Iy) = xyy
     W = SS(KI)
 
-** L
+## L
    Lxy = x(yy)
 
-*** Solution
+### Solution
 
     Lxy = x(yy) = (Kxy)(yy) = S(Kx)yy = (KSx)(Kx)yy = S(KS)Kxyy =
     S(KS)K(Wxy)
@@ -88,27 +88,27 @@ Find combinators M, B, W, L, T such that
 
     L = S(S(KS)K)(KM)
 
-*** Check
+### Check
 
     S(S(KS)K)(KM)xy = S(KS)Kx(KMx)y = S(KS)KxMy = (KSx)(Kx)My = S(Kx)My =
     (Kxy)(My) = x(My) = x(yy)
 
-*** Another solution
+### Another solution
 
     x(yy) = Bxyy = (Bx)yy = W(Bx)y = BWBxy
 
-*** check
+### check
 
     BWBxy = W(Bx)y -- dynamics of B
           = (Bx)yy -- dynamics of W
           = Bxyy
           = x(yy)
 
-** T
+## T
 
    Txy = yx
 
-*** Solution
+### Solution
 
    yx = y(Kxy) = (Iy)(Kxy) = SI(Kx)y = (K(SI)x)(Kx)y = S(K(SI))Kxy
 
@@ -116,15 +116,15 @@ Find combinators M, B, W, L, T such that
 
    Txy = S(K(SI))Kxy = (K(SI)x)(Kx)y = SI(Kx)y = Iy(Kxy) = yx
 
-*** Another
+### Another
 
     yx = y(Kxy) = SI(Kx)y = B(SI)Kxy
 
-** C
+## C
 
    Cxyz = xzy
 
-*** Solution 1
+### Solution 1
 
     xzy = xz(Kyz) = Sx(Ky)z = K(Sx)y(Ky)z = S(K(Sx))Kyz = S((KKx)(Sx))Kyz
         = S(S(KK)Sx)Kyz = ((KS)x)((S(KK)S)x)Kyz
@@ -134,23 +134,23 @@ Find combinators M, B, W, L, T such that
 
     C = S(S(KS)(S(KK)S))(KK)
 
-*** Solution 2
+### Solution 2
 
     xzy = xz(Kyz) = Sx(Ky)z = B(Sx)Kyz = BBSxKyz = BBSx(KKx)yz
         = S(BBS)(KK)xyz
 
     C = S(BBS)(KK)
 
-** INFINITY
+## INFINITY
 
 INFINITY dynamically transform into INFINITY itself.
 
-*** Solution
+### Solution
 
    MM = MM, thus,
    INFINITY = MM
 
-** S
+## S
 
 We have seen how to program the blue bird B, the cardinal C and the
 Warbler W with the kestrel K and the starling S. Could you define the

@@ -10,14 +10,14 @@ been replaced by a variable a). This is a traditional (non recursive)
 exercise. Then YB gives the solution of the recursive equation. (Y is
 the traditional name for a paradoxical combinator). Exercise: why?
 
-** Solution
+## Solution
 
    B(YB) = YB
    B(YB)xyz = xx(YB)(YByy)z = YBxyz
 let YB = A, then
     Axyz = xxA(Ayy)z
 
-* exercises
+# exercises
 
 Find an infinite eliminator E, that is a bird which eliminates all its
 variables: Ex = E, Exy = E, etc.
@@ -31,9 +31,9 @@ Etc. I mean: solve the following equations (little letters like x, y z
 are put for any combinator, A is put for the precise combinator we are
 ask searching for):
 
-Ax = A
+# Ax = A
 
-** solution
+## solution
 
 Let's find B such that
 
@@ -41,31 +41,31 @@ Let's find B such that
       B = K
       A = YB = YK = SLLK
 
-* Ax = xA
+# Ax = xA
 
   Bax = xa
   B = T = B(SI)K
   A = YB = YT = SLLT
 
-* Axy = Ayx
+# Axy = Ayx
 
   Baxy = ayx
   B = C
   A = YB = YC
 
-* Ax = AAx
+# Ax = AAx
 
   Bax = aax
 
   aax = (aa)x = Max, so B = M, A = YB = YM
 
-* A = AA
+# A = AA
 
   Ba = aa
 
   B = M => A = YM
 
-* Ax = AA
+# Ax = AA
 
   Xax = aa
 
@@ -73,7 +73,7 @@ Let's find B such that
   X = BKM
   A = YX = YBKM
 
-* Ax = x(Ax)
+# Ax = x(Ax)
 
   Bax = x(ax)
   x(ax) = Ix(ax) = SIax

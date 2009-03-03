@@ -1,4 +1,4 @@
-* Question: is there a systematic method such that giving any behavior like
+Question: is there a systematic method such that giving any behavior like
 
     Xxyztuv = x(yx)(uvut) (or what you want)
 
@@ -12,11 +12,11 @@ Well actually I will be rather busy so I give you the definition of a paradoxica
 
 First show that for any combinator A there is a combinator B such that AB = B. B is called a fixed point of A. (like the center of a wheel C is a fixed point of the rotations of the wheel: RC = C). It is a bit amazing that all combinators have a fixed point and that is what I propose you try to show. Here are hints for different arguments. 1) Show how to find a fixed point of A (Arbitrary combinator) using just B, M and A. (Mx = xx I recall). 2) The same using just the Lark L (Lxy = x(yy) I recall). Now, a paradoxical combinator Y is just a combinator which applied on that A will give the fixed point of A; that is YA will give a B such that AB = B, that is A(YA) gives YA, or more generally Y is a combinator satisfying Yx = x(Yx).
 
-** Problem: fixed point of A
+## Problem: fixed point of A
 
 Show that for any combinator A there is a combinator B such that AB = B
 
-*** Solution
+### Solution
 
     Ax = x, x=?
 
@@ -51,17 +51,17 @@ let X' = SX'', then
     X' = BSM
     X = M(BSM)
 
-** Check:
+### Check:
 
    M(BSM)yz = BSM(BSM)yz = S(M(BSM))yz
 
-Fixpoint of I:
+## Fixpoint of I:
 
     Ix = x
 
 any combinator is a fixpoint of I
 
-Fixpoint of K
+## Fixpoint of K
 
     Kx = x
     Kxy = xy = x, that is, x is such that for all y
@@ -83,7 +83,7 @@ Search X as M(X')
     X = M(BKM)
 
 
-** Fixpoint of B
+## Fixpoint of B
 
 BX = X
 
@@ -95,17 +95,17 @@ Xyz = M(BBM)yz = BBM(BBM)yz = B(M(BBM))yz = BXyz
 
 X = M(BBM) = BBM(BBM) = B(M(BBM)) = BX
 
-** Fixpoint of M
+## Fixpoint of M
 
 X = M(BMM)
 
 Xy = M(BMM)y = BMM(BMM)y = M(M(BMM))y
 
-** Fixpoint of A
+## Fixpoint of A
 
 X = M(BAM) = BAM(BAM) = A(M(BAM)) = AX
 
-* Y
+# Y
 
 YA = M(BAM)
 
